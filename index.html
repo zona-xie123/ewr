@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <title> - 玉山銀行</title>
+    <title>理財快易通 遠端e指接收專屬資產配置-財富管理-玉山銀行</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.esunbank.com/bank/rwd/images/esun.ico">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="title" content=" - 玉山銀行">
-    <meta name="keywords" content="">
-    <meta name="Description" content="">
-    <meta name="og:description" content="" />
+    <meta name="keywords" content="玉山銀行,財富管理,資產配置,理專,理財,數位,基金,海外債,投資,財務規劃,理財快易通,專業團隊" />
+    <meta name="description" content="國內銀行首創【理財快易通】服務，結合創新及科技，將財富管理顧問服務再升級！讓您不受時空限制，都能透過玉山行動銀行App遠端接收專屬資產配置規劃，並能即時確認交易內容、掌握投資契機。" />
+    <meta property="og:title" content="玉山銀行 理財快易通 遠端e指接收專屬資產配置">
     <meta property="og:title" content=" - 玉山銀行" />
     <meta property="og:type" content="bank" />
     <meta property="fb:app_id" content="" />
@@ -624,7 +623,7 @@
                 </g>
             </svg>
             <div class="container">
-                <div class="left-img magnetic">
+                <div class="left-img">
                     <img src="img/kv-phone.png" class="img-responsive" alt="">
                 </div>
                 <div class="right-con">
@@ -632,7 +631,7 @@
                         <h1 class="text">理財快易通</h1>
                         <h2 class="text"><span>交易就是快</span><span>操作好簡易</span><span>理財一指通</span></h2>
                         <p class="text">共同基金、海外債券、海外ETF/股票
-                            <br>一鍵快速完成全方位資產配置</p>
+                            <br>一指快速完成全方位資產配置</p>
                     </div>
 
                 </div>
@@ -3433,7 +3432,7 @@ gsap.to(".ball03", {
             y: "random(10, 30)",
             stagger: 0.35
         });
-        gsap.from(".magnetic", {
+        gsap.from(".left-img", {
             duration: 1,
             opacity: 0,
             y: "random(10, 30)"
@@ -3456,22 +3455,6 @@ gsap.to(".ball03", {
             stagger: 0.2,
             repeat: -1
         });
-
-        var magnents = document.querySelectorAll('.magnetic');
-        var strength = 30;
-        magnents.forEach((magnent) => {
-            magnent.addEventListener('mousemove', moveMagnet)
-        })
-
-        function moveMagnet(event) {
-            var magnentButton = event.currentTarget;
-            var bounding = magnentButton.getBoundingClientRect();
-            TweenMax.to(magnentButton, 1, {
-                x: ((event.clientX - bounding.left) / magnentButton.offsetWidth - 0.5) * strength,
-
-                ease: Power4.easeOut,
-            });
-        }
  
     </script>
 
