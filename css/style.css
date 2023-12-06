@@ -126,7 +126,7 @@
   }
   .kv svg {
     width: 200%;
-    left: -357px;
+    left: -6%;
   }
   .kv .right-con {
     text-align: center;
@@ -491,6 +491,11 @@
   vertical-align: middle;
   width: 100%;
 }
+@media screen and (max-width: 1180px) {
+  .swiper-container {
+    max-width: 580px;
+  }
+}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -509,12 +514,24 @@
 @media screen and (max-width: 1180px) {
   .swiper-button-next {
     right: 30vw;
-    bottom: -30px;
+    bottom: 41%;
   }
 }
 @media screen and (max-width: 768px) {
   .swiper-button-next {
-    right: 70px;
+    right: 125px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .swiper-button-next {
+    bottom: 46%;
+    right: 46px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .swiper-button-next {
+    bottom: 47%;
+    right: 43px;
   }
 }
 
@@ -528,12 +545,24 @@
 @media screen and (max-width: 1180px) {
   .swiper-button-prev {
     right: 38vw;
-    bottom: -30px;
+    bottom: 41%;
   }
 }
 @media screen and (max-width: 768px) {
   .swiper-button-prev {
-    right: 140px;
+    right: 196px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .swiper-button-prev {
+    right: 120px;
+    bottom: 46%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .swiper-button-prev {
+    bottom: 47%;
+    right: 116px;
   }
 }
 
@@ -712,6 +741,7 @@
 .white-popup .con .txt p {
   font-size: 16px;
   line-height: 24px;
+  text-align: justify;
 }
 @media screen and (max-width: 768px) {
   .white-popup {
