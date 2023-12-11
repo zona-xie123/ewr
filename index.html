@@ -635,9 +635,11 @@
                     </div>
 
                 </div>
+              <div class="kv-ball">
                 <img src="img/ball01.png" class="img-responsive ball01" alt="">
                 <img src="img/ball02.png" class="img-responsive ball02" alt="">
                 <img src="img/ball02.png" class="img-responsive ball03" alt="">
+              </div>
             </div>
         </div>
         <!--國內銀行首創理財快易通服務  -->
@@ -3354,8 +3356,9 @@ gsap.to(".bg-line", {
 });
 gsap.to(".ball02", {
   scrollTrigger: {
-    trigger: ".kv",
+    trigger: ".kv-ball",
     start: "top",
+    end: "50%",
     toggleActions: "play none play play",
     end: "50%",
     scrub: true,
@@ -3364,8 +3367,8 @@ gsap.to(".ball02", {
 });
 gsap.to(".ball01", {
   scrollTrigger: {
-    trigger: ".kv",
-    start: "top",
+    trigger: ".kv-ball",
+    start: "top 200px",
     end: "50%",
     
     scrub: true,
@@ -3374,8 +3377,8 @@ gsap.to(".ball01", {
 });
 gsap.to(".ball03", {
   scrollTrigger: {
-    trigger: ".kv",
-    start: "top",
+    trigger: ".kv-ball",
+    start: "top 200px",
     end: "50%",
     scrub: true,
   },
