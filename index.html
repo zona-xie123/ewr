@@ -635,11 +635,9 @@
                     </div>
 
                 </div>
-              <div class="kv-ball">
                 <img src="img/ball01.png" class="img-responsive ball01" alt="">
                 <img src="img/ball02.png" class="img-responsive ball02" alt="">
                 <img src="img/ball02.png" class="img-responsive ball03" alt="">
-              </div>
             </div>
         </div>
         <!--國內銀行首創理財快易通服務  -->
@@ -3283,7 +3281,7 @@
                         本行所提供合作機構資訊可能是取得多種已刊載或非刊載且被相信是可靠的來源，本行就其正確性或完整性不做任何保證，或就因使用本文件所產生的直接、間接之損失負擔任何責任。<br>債券內容涉及新興市場之部分，其波動性與風險程度可能較高，且其政治與經濟情勢穩定度亦可能低於已開發國家，購買前請謹慎評估。政府持股公司債亦可能有違約之風險。債券評等時有異動，請參照公開資訊或洽本行專人。完整產品條款應以產品說明書為準。所有投資產品非中央存款保險理賠項目，亦不受銀行保證，可能會損及本金。
                     </li>
                     <li><b>海外ETF/股票投資警語</b>海外ETF/股票警語請詳<a
-                            href="hhttps://www.esunbank.com/zh-tw/about/announcement/announcement?i=fC8T2FObKUGEFsoOHajOoQ&p=fY8tSwscLkqI3d1smTbuuw"
+                            href="https://www.esunbank.com/zh-tw/about/announcement/announcement?i=fC8T2FObKUGEFsoOHajOoQ&p=fY8tSwscLkqI3d1smTbuuw"
                             target="_blank">此處</a>。</li>
                     <li>受限於無線傳輸特性，本服務實際連線品質須視顧客之行動裝置通信網路而定。</li>
                 </ul>
@@ -3354,63 +3352,26 @@ gsap.to(".bg-line", {
   ease: Sine.easeInOut,
   stagger: 0.35,
 });
-gsap.to(".ball02", {
-  scrollTrigger: {
-    trigger: ".kv-ball",
-    start: "top",
-    end: "50%",
-    toggleActions: "play none play play",
-    end: "50%",
-    scrub: true,
-  },
-  y: 40
-});
-gsap.to(".ball01", {
-  scrollTrigger: {
-    trigger: ".kv-ball",
-    start: "top 200px",
-    end: "50%",
-    
-    scrub: true,
-  },
-  y: -60
-});
-gsap.to(".ball03", {
-  scrollTrigger: {
-    trigger: ".kv-ball",
-    start: "top 200px",
-    end: "50%",
-    scrub: true,
-  },
-  y: -30
-});
 
 
-        // gsap.to(".cls-3c", {
-        //         scrollTrigger: {
-        //             scrub: 1
-        //         },
-        //         y: 400
-        //     });
+gsap.from(".ball01", {
+            duration: 1.3,
+            y: -60,
+            ease: Sine.easeInOut
+        });
+        gsap.from(".ball02", {
+            duration: 1.3,
+            y: 40,
+            ease: Sine.easeInOut
+        });
+gsap.from(".ball03", {
+            duration: 1.5,
+            y: -30,
+            yoyo: true,
+            ease: Sine.easeInOut
+        });
 
-        // gsap.to(".ball02", {
-        //     scrollTrigger: {
-        //         scrub: 1
-        //     },
-        //     y: 400
-        // });
-        // gsap.to(".ball01", {
-        //     scrollTrigger: {
-        //         scrub: 1
-        //     },
-        //     y: -270
-        // });
-        // gsap.to(".ball03", {
-        //     scrollTrigger: {
-        //         scrub: 1
-        //     },
-        //     y: -200
-        // });
+      
         gsap.to(".step-ball01", {
             scrollTrigger: {
                 scrub: 1
